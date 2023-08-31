@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-h1, h2, h3 {
+/* 共通クラス */
+
+h1,
+h2,
+h3 {
   text-align: center;
   margin: 40px 0;
   font-weight: bold;
@@ -8,4 +12,200 @@ h1, h2, h3 {
 
 .question--title {
   font-size: 20px;
+}
+
+.box-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex, .flex > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-wrapper {
+  margin: 0 auto;
+}
+
+.float-wrapper {
+  width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Q5 */
+.content,
+.hidden {
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue {
+  background-color: #0008ff;
+}
+
+.orange {
+  background-color: #ff8400;
+}
+
+
+
+/* Q6 */
+
+.green {
+  background-color: #00ff51;
+}
+
+.yellow {
+  background-color: #d4ff00;
+}
+
+.violet {
+  background-color: #ff00e1;
+}
+
+
+/*=========== PC ============ */
+
+@media screen and (min-width:960px) {
+
+  /* Q1 */
+  .size-box {
+    background-color: #ff0000;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  /* Q2 */
+  .color-box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  /* Q3 */
+  .margin-left-box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .margin-right-box {
+    background-color: #22ff00;
+    width: 300px;
+    height: 300px;
+    margin-left: 150px
+  }
+
+  /* Q4 */
+
+  .float-left-box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+
+
+  .float-right-box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+
+  /* Q5 */
+  .reverse-box {
+    flex-direction: row;
+  }
+
+  /* Q7 */
+  .hidden-box > .blue {
+    display: none;
+  }
+
+}
+
+/* =========== SP ============ */
+
+@media screen and (max-width:959px) {
+
+  /* Q1 */
+  .size-box {
+    background-color: #ff0000;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  /* Q2 */
+  .color-box {
+    background-color: #007bff;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  /* Q3 */
+  .margin-left-box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .margin-right-box {
+    background-color: #22ff00;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px
+  }
+
+  /* Q4 */
+
+  .float-left-box {
+    background-color: #ff0000;
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .float-right-box {
+    background-color: #0008ff;
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Q5 */
+  .reverse-box {
+    flex-direction: row-reverse
+  }
+
+  /* Q6 */
+
+  .violet {
+    order: -1;
+  }
+
+  .green {
+    order: 1;
+  }
+
+  .yellow {
+    order: 2;
+  }
+
+  /* Q7 */
+
+  .hidden-box > .red {
+    display: none;
+  }
+
 }

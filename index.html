@@ -11,13 +11,40 @@
 </head>
 
 <body>
-  <h2 class="question--title">Q7 サイズ変更</h2>
-  <h2 class="question--title">Q2 色変更</h2>
-  <h2 class="question--title">Q3 margin値の変更</h2>
-  <h2 class="question--title">Q4 floatの解除</h2>
-  <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
-  <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
-  <h2 class="question--title">Q7 要素の表示・非表示</h2>
+  <div class="box-container">
+    <h2 class="question--title">Q1-1 サイズ変更</h2>
+    <div class="size-box"></div>
+    <h2 class="question--title">Q2 色変更</h2>
+    <div class="color-box"></div>
+    <h2 class="question--title">Q3 margin値の変更</h2>
+    <div class="box-wrapper flex">
+      <div class="margin-left-box"></div>
+      <div class="margin-right-box"></div>
+    </div>
+    <h2 class="question--title">Q4 floatの解除</h2>
+    <div class="float-wrapper">
+      <div class="float-left-box"></div>
+      <div class="float-right-box"></div>
+    </div>
+    <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
+    <div class="reverse-box flex">
+      <div class="content red">A</div>
+      <div class="content blue">B</div>
+      <div class="content orange">C</div>
+    </div>
+    <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
+    <div class="row-box flex">
+      <div class="content green">A</div>
+      <div class="content yellow">B</div>
+      <div class="content violet">C</div>
+    </div>
+    <h2 class="question--title">Q7 要素の表示・非表示</h2>
+    <div class="hidden-box flex">
+      <div class="hidden red"></div>
+      <div class="hidden blue"></div>
+      <div class="hidden green"></div>
+    </div>
+  </div>
 </body>
 
 </html>
