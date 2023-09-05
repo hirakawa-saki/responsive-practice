@@ -19,7 +19,8 @@ h3 {
   margin: 0 auto;
 }
 
-.flex, .flex > .content {
+.flex,
+.flex>.content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +34,47 @@ h3 {
   width: 600px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+/* Q1 */
+.size-box {
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+/* Q2 */
+.color-box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* Q3 */
+.margin-left-box {
+  background-color: #0008ff;
+  width: 300px;
+  height: 300px;
+}
+
+.margin-right-box {
+  background-color: #22ff00;
+  width: 300px;
+  height: 300px;
+  margin-left: 150px
+}
+
+/* Q4 */
+
+.float-left-box {
+  background-color: #ff0000;
+  width: 300px;
+  height: 300px;
+}
+
+.float-right-box {
+  background-color: #0008ff;
+  width: 300px;
+  height: 300px;
 }
 
 /* Q5 */
@@ -77,48 +119,20 @@ h3 {
 
   /* Q1 */
   .size-box {
-    background-color: #ff0000;
     width: 400px;
     height: 400px;
-    margin: 0 auto;
   }
 
   /* Q2 */
   .color-box {
     background-color: #ff0000;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
   }
-
-  /* Q3 */
-  .margin-left-box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
-  }
-
-  .margin-right-box {
-    background-color: #22ff00;
-    width: 300px;
-    height: 300px;
-    margin-left: 150px
-  }
-
-  /* Q4 */
 
   .float-left-box {
-    background-color: #ff0000;
-    width: 300px;
-    height: 300px;
     float: left;
   }
 
-
   .float-right-box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
     float: left;
   }
 
@@ -128,7 +142,7 @@ h3 {
   }
 
   /* Q7 */
-  .hidden-box > .blue {
+  .hidden-box>.blue {
     display: none;
   }
 
@@ -140,47 +154,18 @@ h3 {
 
   /* Q1 */
   .size-box {
-    background-color: #ff0000;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
   }
 
   /* Q2 */
   .color-box {
     background-color: #007bff;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
   }
 
   /* Q3 */
-  .margin-left-box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
-  }
-
   .margin-right-box {
-    background-color: #22ff00;
-    width: 300px;
-    height: 300px;
     margin-left: 50px
-  }
-
-  /* Q4 */
-
-  .float-left-box {
-    background-color: #ff0000;
-    width: 300px;
-    height: 300px;
-  }
-
-
-  .float-right-box {
-    background-color: #0008ff;
-    width: 300px;
-    height: 300px;
   }
 
   /* Q5 */
@@ -204,7 +189,7 @@ h3 {
 
   /* Q7 */
 
-  .hidden-box > .red {
+  .hidden-box>.red {
     display: none;
   }
 
