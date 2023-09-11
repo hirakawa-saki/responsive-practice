@@ -98,6 +98,11 @@
   background-color: #ff00e1;
 }
 
+/* Q7 */
+
+.e-green {
+  background-color: #00ff51;
+}
 
 /*=========== PC ============ */
 
@@ -125,9 +130,26 @@
     flex-direction: row;
   }
 
+  /* Q6 */
+  .violet {
+    order: 3;
+  }
+
+  .green {
+    order: 1;
+  }
+
+  .yellow {
+    order: 2;
+  }
+
   /* Q7 */
   .hidden-box>.blue {
     display: none;
+  }
+
+  .hidden-box>.red {
+    display: block;
   }
 
 
@@ -159,15 +181,15 @@
   /* Q6 */
 
   .violet {
-    order: -1;
-  }
-
-  .green {
     order: 1;
   }
 
-  .yellow {
+  .green {
     order: 2;
+  }
+
+  .yellow {
+    order: 3;
   }
 
   /* Q7 */
