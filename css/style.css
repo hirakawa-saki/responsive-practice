@@ -22,14 +22,23 @@
   margin: 0 auto;
 }
 
+.clear{
+	clear:both;
+}
+
+/* =========== PC ============ */
+
 /* Q1 */
 .size-box {
   background-color: #ff0000;
   margin: 0 auto;
+  width: 400px;
+  height: 400px;
 }
 
 /* Q2 */
 .color-box {
+  background-color: #ff0000;
   width: 300px;
   height: 300px;
   margin: 0 auto;
@@ -55,12 +64,14 @@
   background-color: #ff0000;
   width: 300px;
   height: 300px;
+  float: left;
 }
 
 .float-right-box {
   background-color: #0008ff;
   width: 300px;
   height: 300px;
+  float: left;
 }
 
 /* Q5 */
@@ -68,6 +79,10 @@
 .hidden {
   width: 300px;
   height: 300px;
+}
+
+.reverse-box {
+  flex-direction: row;
 }
 
 .red {
@@ -88,14 +103,17 @@
 
 .green {
   background-color: #00ff51;
+  order: 1;
 }
 
 .yellow {
   background-color: #d4ff00;
+  order: 2;
 }
 
 .violet {
   background-color: #ff00e1;
+  order: 3;
 }
 
 /* Q7 */
@@ -104,53 +122,14 @@
   background-color: #00ff51;
 }
 
-/*=========== PC ============ */
+.hidden-box>.blue {
+  display: none;
+}
 
-  /* Q1 */
-  .size-box {
-    width: 400px;
-    height: 400px;
-  }
+.hidden-box>.red {
+  display: block;
+}
 
-  /* Q2 */
-  .color-box {
-    background-color: #ff0000;
-  }
-
-  .float-left-box {
-    float: left;
-  }
-
-  .float-right-box {
-    float: left;
-  }
-
-  /* Q5 */
-  .reverse-box {
-    flex-direction: row;
-  }
-
-  /* Q6 */
-  .violet {
-    order: 3;
-  }
-
-  .green {
-    order: 1;
-  }
-
-  .yellow {
-    order: 2;
-  }
-
-  /* Q7 */
-  .hidden-box>.blue {
-    display: none;
-  }
-
-  .hidden-box>.red {
-    display: block;
-  }
 
 
 /* =========== SP ============ */
@@ -171,6 +150,14 @@
   /* Q3 */
   .margin-right-box {
     margin-left: 50px
+  }
+
+  .float-left-box {
+    float: none;
+  }
+  
+  .float-right-box {
+  float: none;
   }
 
   /* Q5 */
