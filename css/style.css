@@ -22,10 +22,6 @@
   margin: 0 auto;
 }
 
-.clear{
-	clear:both;
-}
-
 /* =========== PC ============ */
 
 /* Q1 */
@@ -155,9 +151,9 @@
   .float-left-box {
     float: none;
   }
-  
+
   .float-right-box {
-  float: none;
+    float: none;
   }
 
   /* Q5 */
